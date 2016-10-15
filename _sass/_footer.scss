@@ -1,0 +1,16 @@
+footer{
+    display: flex;
+}
+
+.footer{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    color: #ccc;
+    font-size: .8em;
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        font-size: .4em;
+    }
+}
