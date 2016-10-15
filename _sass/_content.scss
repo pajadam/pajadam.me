@@ -1,0 +1,17 @@
+.container{
+    background-color: #bdc3c7;
+    color: #ccc;
+    padding: 5% 2.5% 5% 2.5%;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 10% 2% 10% 2%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container{
+        padding: 5% 10% 5% 10%;
+    }
+}
