@@ -18,3 +18,18 @@ body{
     text-align: center;
     text-shadow: 1px 1px 4px rgba(0,0,0,1);
 }
+
+a, a:link, a:visited{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #aaa;
+    text-shadow: 1px 1px 4px rgba(0,0,0,1);
+}
+
+a:hover{
+    color: #fff;
+}
+
+a:active{
+    color: #ccc;
+}
