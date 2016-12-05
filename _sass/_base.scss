@@ -21,11 +21,16 @@ body{
     text-shadow: 1px 1px 4px rgba(0,0,0,1);
 }
 
+.spacer{
+    margin-top: 2%;
+}
+
 a, a:link, a:visited{
     color: #aaa;
     text-shadow: 1px 1px 4px rgba(0,0,0,1);
     text-transform: capitalize;
     text-decoration: none;
+    transition-duration: .3s;
 }
 
 a:hover{
@@ -38,4 +43,10 @@ a:active{
 
 .reset{
     clear:both;
+}
+
+@media screen and (min-width: 1280px) {
+    .spacer{
+        margin-top: 2.5%;
+    }
 }
