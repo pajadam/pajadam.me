@@ -3,14 +3,14 @@ footer{
 }
 
 .footer{
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    color: #ccc;
-    font-size: .8em;
+    color: #888;
+    padding: 1% 0px;
+    font-size: .6em;
 }
 
 @media screen and (max-width: 768px) {
     .footer{
+        padding: 2% 0px;
         font-size: .4em;
     }
 }

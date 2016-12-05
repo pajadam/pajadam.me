@@ -1,8 +1,3 @@
-header{
-    background: url('/data/img/0.svg');
-    background-size: cover; 
-}
-
 .header{
     padding: 2.5% 0%;
     color: #fff;
@@ -10,6 +5,7 @@ header{
 }
 
 .navbar{
+    width:100%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -18,16 +14,15 @@ header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width:100%;
     background-color: rgba( 0, 0, 0, .5);
 }
 
 .navbar .item{
-    transition-duration: .5s;
     padding: 1% 2%;
     font-size: .7em;
     text-align: center;
     text-transform: uppercase;
+    transition-duration: .5s;
 }
 
 .navbar .item:before{
@@ -51,12 +46,12 @@ header{
 
 @media screen and (min-width: 1280px) {
     .header{
-        font-size: 2.5em;
         padding: 2% 0%;
+        font-size: 2.5em;
     }
 
     .navbar .item{
-        font-size: .8em;
         width: 275px;
+        font-size: .8em;
     }
 }
