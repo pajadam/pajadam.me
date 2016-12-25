@@ -3,13 +3,19 @@ layout: default
 ---
 <div class="centered box">
 
-    <h3>#work<b>in</b>progress</h3>
+    <h1><i class="icon-desktop"></i> My gear</h1>
+
+    {% include parts/gear.html %}
 
 </div>
 
 <div class="spacer"></div>
 
 <div class="centered box">
-    <a href="https://www.youtube.com/user/ThePajadamPL" class="icon-youtube"></a>
-    <a href="https://github.com/pajadam" class="icon-github"></a>
+    <h1>Useful links</h1>
+
+    <a title="Visit my GitHub account." href="https://github.com/pajadam" class="icon-github link"></a>
+    <a title="Visit my YouTube channel." href="https://www.youtube.com/user/ThePajadamPL" class="icon-youtube link"></a>
+    {% include parts/email.html %}
+
 </div>
