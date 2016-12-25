@@ -5,6 +5,7 @@ html{
 
 body,
 h1, h2, h3{
+    color: #ddd;
     margin: 0px;
     padding: 0px;
     position: relative;
@@ -15,6 +16,10 @@ body{
     min-height: 100vh;
     background: url('../img/0.svg');
     background-size: cover;
+}
+
+b{
+    color: #eee;
 }
 
 .centered{
