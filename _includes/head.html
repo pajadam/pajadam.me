@@ -3,22 +3,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
 <meta name="robots" content="index, follow">
 <meta name="description" content="{{ site.description }}">
-<link rel="canonical" href="https://pajadam.me">
+<link rel="canonical" href="{{ site.url }}">
 
 <title>{{ site.title }}</title>
 
 <meta name="DC.Title" content="{{ site.title }}">
-<meta name="DC.Creator" content="pajadam.me">
+<meta name="DC.Creator" content="Adam Pajkert">
 <meta name="DC.Subject" content="{{ site.altname }}">
 <meta name="DC.Description" content="{{ site.description }}">
 <meta name="DC.Language" content="en">
-<meta name="DC.Rights" content="pajadam.me">
+<meta name="DC.Rights" content="{{ site.url }}">
 
-<meta property="og:url" content="https://pajadam.me">
+<meta property="og:url" content="{{ site.url }}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ site.title }}">
 <meta property="og:description" content="{{ site.altname }} - Developer Website">
-<meta property="og:image" content="https://pajadam.me/data/img/0.png">
+<meta property="og:image" content="{{ site.url }}/data/img/0.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
@@ -27,7 +27,7 @@
     "@context": "http://www.schema.org",
     "@type": "WebSite",
     "alternateName": "{{ site.altname }}",
-    "url": "https://pajadam.me",
+    "url": "{{ site.url }}",
     "name": "{{ site.title }}",
     "description": "{{ site.description }}"
 }
