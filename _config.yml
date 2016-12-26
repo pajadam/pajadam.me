@@ -1,9 +1,8 @@
 title: Adam Pajkert < software developer > pajadam
 description: My name is Adam Pajkert also known as pajadam. I'm young software developer from Poland. Feel free to check out my projects and social media.
 altname: Adam Pajkert | pajadam
-baseurl: ""
+author: Adam Pajkert
 url: "https://pajadam.me"
-github_username: pajadam
 
 markdown: kramdown
 

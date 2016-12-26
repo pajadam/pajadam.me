@@ -1,18 +1,18 @@
 html{
-    font-family: 'Lato', sans-serif;
+    color: #eee;
     font-size: 48px;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 4px rgba(0,0,0,1);
 }
 
 body,
 h1, h2, h3{
-    color: #ddd;
     margin: 0px;
     padding: 0px;
-    position: relative;
-    text-shadow: 1px 1px 4px rgba(0,0,0,1);
 }
 
 body{
+    position: relative;
     min-height: 100vh;
 
     background: #360033; /* fallback for old browsers */
@@ -20,26 +20,13 @@ body{
     background: radial-gradient(50%, #07585f , #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
 }
 
-b{
-    color: #eee;
-}
-
 .centered{
     width: 100%;
     text-align: center;
-    text-shadow: 1px 1px 4px rgba(0,0,0,1);
 }
 
 .justify{
     text-align: justify;
-}
-
-.left{
-    text-align: left;
-}
-
-.right{
-    text-align: right;
 }
 
 .spacer{
@@ -48,22 +35,14 @@ b{
 
 a, a:link, a:visited{
     color: #aaa;
-    text-shadow: 1px 1px 4px rgba(0,0,0,1);
-    text-transform: capitalize;
     text-decoration: none;
     transition-duration: .3s;
 }
 
-a:hover{
+a:hover,
+a:active,
+b{
     color: #fff;
-}
-
-a:active{
-    color: #ccc;
-}
-
-.reset{
-    clear:both;
 }
 
 table {
