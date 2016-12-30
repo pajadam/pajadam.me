@@ -4,6 +4,8 @@ altname: Adam Pajkert | pajadam
 author: Adam Pajkert
 url: "https://pajadam.me"
 
+analytics_id: "UA-77141286-5"
+
 markdown: kramdown
 
 gems:
