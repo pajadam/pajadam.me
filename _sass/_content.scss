@@ -53,6 +53,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .container{
+        padding: 16px 8px;
+    }
+
     .box h1{
         font-size: .7em;
     }
@@ -76,7 +80,7 @@
 
 @media screen and (min-width: 1280px) {
     .container{
-        padding: 2.5% 10%;
+        padding: 32px 10%;
     }
 
     .box h1{
