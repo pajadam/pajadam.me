@@ -7,31 +7,9 @@
 
 <title>{{ site.title }}</title>
 
-<meta name="DC.Title" content="{{ site.title }}">
-<meta name="DC.Creator" content="{{ site.author }}">
-<meta name="DC.Subject" content="{{ site.altname }}">
-<meta name="DC.Description" content="{{ site.description }}">
-<meta name="DC.Language" content="en">
-<meta name="DC.Rights" content="{{ site.url }}">
+{% include parts/base_metadata.html %}
 
-<meta property="og:url" content="{{ site.url }}">
-<meta property="og:type" content="website">
-<meta property="og:title" content="{{ site.title }}">
-<meta property="og:description" content="{{ site.altname }} - Developer Website">
-<meta property="og:image" content="{{ site.url }}/data/img/0.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-<script type='application/ld+json'> 
-{
-    "@context": "http://www.schema.org",
-    "@type": "WebSite",
-    "alternateName": "{{ site.altname }}",
-    "url": "{{ site.url }}",
-    "name": "{{ site.title }}",
-    "description": "{{ site.description }}"
-}
-</script>
+<link rel="amphtml" href="{{ site.url }}/amp/">
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -46,10 +24,3 @@
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin">
 <link rel="stylesheet" type="text/css" href="data/css/main.css">
-
-<link rel="apple-touch-icon" href="data/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="data/favicon/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="data/favicon/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="data/favicon/manifest.json">
-<link rel="mask-icon" href="data/favicon/safari-pinned-tab.svg">
-<meta name="theme-color" content="#ffffff">

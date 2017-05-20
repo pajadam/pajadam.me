@@ -17,7 +17,7 @@ body{
 
     background: #07585f; /* fallback for old browsers */
     background: -webkit-radial-gradient(50%, #07585f , #0b8793, #360033); /* Chrome 10-25, Safari 5.1-6 */
-    background: radial-gradient(50%, #07585f , #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+    background: radial-gradient(50%, #07585f , #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .centered{
@@ -27,10 +27,6 @@ body{
 
 .justify{
     text-align: justify;
-}
-
-.spacer{
-    margin-top: 24px;
 }
 
 a, a:link, a:visited{
@@ -54,15 +50,15 @@ th, td {
     padding: 6px;
     font-size: .3em;
     text-align: left;
-    border-bottom: 1px solid rgba( 0, 0, 0, .5);
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
 }
 
 tr:hover{
-    background-color: rgba( 0, 0, 0, .5)!important;
+    background-color: rgba(0, 0, 0, .5)!important;
 }
 
 tr:nth-child(even){
-    background-color: rgba( 0, 0, 0, .25);
+    background-color: rgba(0, 0, 0, .25);
 }
 
 @media screen and (max-width: 768px) {
