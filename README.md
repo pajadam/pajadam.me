@@ -2,4 +2,4 @@
 
 Designed to be modern and light.
 
-### Site is using Jekyll
+## Site is using Jekyll

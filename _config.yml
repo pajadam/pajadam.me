@@ -8,7 +8,7 @@ analytics_id: "UA-77141286-5"
 
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-press
 
 jekyll-press:
