@@ -2,7 +2,7 @@ html{
     color: #eee;
     font-size: 48px;
     font-family: 'Lato', sans-serif;
-    text-shadow: 1px 1px 4px rgba(0,0,0,1);
+    text-shadow: 0px 0px 1px rgba(0,0,0,.5);
 }
 
 body,
@@ -14,10 +14,6 @@ h1, h2, h3{
 body{
     position: relative;
     min-height: 100vh;
-
-    background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background: #2b5876;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
@@ -34,14 +30,13 @@ body{
 }
 
 a, a:link, a:visited{
-    color: #aaa;
+    color: #ccc;
     text-decoration: none;
     transition-duration: .3s;
 }
 
 a:hover,
-a:active,
-b{
+a:active{
     color: #fff;
 }
 
