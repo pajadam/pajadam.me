@@ -15,9 +15,13 @@ body{
     position: relative;
     min-height: 100vh;
 
-    background: #07585f; /* fallback for old browsers */
-    background: -webkit-radial-gradient(50%, #07585f , #0b8793, #360033); /* Chrome 10-25, Safari 5.1-6 */
-    background: radial-gradient(50%, #07585f , #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .centered{
@@ -41,42 +45,14 @@ b{
     color: #fff;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 6px;
-    font-size: .3em;
-    text-align: left;
-    border-bottom: 1px solid rgba(0, 0, 0, .5);
-}
-
-tr:hover{
-    background-color: rgba(0, 0, 0, .5)!important;
-}
-
-tr:nth-child(even){
-    background-color: rgba(0, 0, 0, .25);
-}
-
 @media screen and (max-width: 768px) {
     .spacer{
         margin-top: 16px;
-    }
-
-    th, td{
-        padding: 4px;
-        font-size: .25em;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .spacer{
         margin-top: 32px;
-    }
-    th, td{
-        font-size: .35em;
     }
 }
