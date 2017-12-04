@@ -29,6 +29,11 @@ body{
     text-align: justify;
 }
 
+.marginless,
+.marginless::before{
+    margin: 0;
+}
+
 a, a:link, a:visited{
     color: #ccc;
     text-decoration: none;

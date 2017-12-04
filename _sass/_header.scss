@@ -1,28 +1,52 @@
 .header{
     color: #fff;
-    padding: 2.5% 0px;
-    font-size: 2em;
-    background-color: rgba(0, 0, 0, .4);
+    padding: 16px 0px;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .navbar{
-    width:100%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.2)!important;
+}
+
+.navbar .inner{
+    max-width: $max-width;
+    margin: 0 auto;
+
     display: flex;
-    flex-wrap: wrap;
+}
+
+.navbar .left{
+    flex: 1 0;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
+}
+
+.navbar .center{
+    flex: 1;
+    display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, .6);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+    align-items: center;
+}
+
+.navbar .right{
+    flex: 1 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .navbar .item{
-    padding: 8px 2%;
-    font-size: .7em;
+    flex: 1;
+
+    padding: 8px 16px;
+    font-size: .6em;
     text-align: center;
+    box-sizing: border-box;
     text-transform: uppercase;
 }
 
@@ -31,28 +55,38 @@
 }
 
 .navbar .item:hover{
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .3);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $mobile-width){
     .header{
         padding: 16px 0px;
-        font-size: 1em;
+        font-size: .9em;
     }
 
     .navbar .item{
         font-size: .5em;
     }
+
+    .navbar .inner{
+        flex-wrap: wrap;
+    }
+
+    .navbar .center{
+        flex-basis: 100%;
+        order: -1;
+
+        border-bottom: 4px dotted rgba(255, 255, 255, .5);
+    }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $huge-width) {
     .header{
-        padding: 2% 0px;
-        font-size: 2.5em;
+        padding: 20px 0px;
+        font-size: 1.25em;
     }
 
     .navbar .item{
-        width: 275px;
-        font-size: .8em;
+        font-size: .6em;
     }
 }
