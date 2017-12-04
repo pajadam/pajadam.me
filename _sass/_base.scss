@@ -45,13 +45,13 @@ a:active{
     color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $mobile-width) {
     .spacer{
         margin-top: 16px;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $huge-width) {
     .spacer{
         margin-top: 32px;
     }

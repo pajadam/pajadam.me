@@ -50,7 +50,7 @@
     background-color: rgba(0, 0, 0, .7);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $mobile-width) {
     .container{
         padding: 0px 10px;
     }
@@ -80,7 +80,7 @@
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $huge-width) {
     .container{
         padding: 0px 10%;
     }
