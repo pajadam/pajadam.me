@@ -9,52 +9,26 @@
 }
 
 .box{
-
     width: 100%;
     margin: 24px auto;
-    padding: 2.5%;
+    padding: 24px;
     max-width: $max-width;
     box-sizing: border-box;
     text-align: center;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .45);
 
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.5);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.5);
-    box-shadow: 0px 0px 2px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.35);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.35);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,.35);
 }
 
 .box h1{
-    font-size: 1em;
-}
-
-.box h2{
     font-size: .75em;
 }
 
-.box h3{
-    font-size: .5em;
-}
-
 .box p{
-    margin: 4px 0px;
-    font-size: .4em;
-}
-
-.box .link{
-    display: inline-block;
-    font-size: .9em;
-    margin-top: 8px;
-}
-
-.box .button{
-    margin-top: 8px;
-    display: inline-block;
-    padding: 12px;
-    background-color: rgba(0, 0, 0, .35);
-}
-
-.box .button:hover{
-    background-color: rgba(0, 0, 0, .7);
+    margin: 8px 0px;
+    font-size: .35em;
 }
 
 @media screen and (max-width: $mobile-width) {
@@ -69,23 +43,11 @@
     }
 
     .box h1{
-        font-size: .7em;
-    }
-
-    .box h2{
-        font-size: .5em;
-    }
-
-    .box h3{
-        font-size: .3em;
+        font-size: .6em;
     }
 
     .box p{
         font-size: .35em;
-    }
-
-    .box .link{
-        font-size: .75em;
     }
 }
 
@@ -97,22 +59,11 @@
     }
 
     .box h1{
-        font-size: 1.2em;
-    }
-
-    .box h2{
-        font-size: 1em;
-    }
-
-    .box h3{
-        font-size: .8em;
+        font-size: .9em;
     }
 
     .box p{
-        font-size: .5em;
-    }
-
-    .box .link{
-        font-size: 1em;
+        margin: 12px 0px;
+        font-size: .4em;
     }
 }
