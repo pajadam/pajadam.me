@@ -15,19 +15,9 @@ footer{
     font-size: 20px;
 }
 
-.footer-spacing{
-    padding: 8px 0px;
-    margin-top: 64px;
-}
-
 @media screen and (max-width: $mobile-width) {
     .footer{
         padding: 6px 0px;
         font-size: 16px;
-    }
-
-    .footer-spacing{
-        padding: 6px 0px;
-        margin-top: 46px;
     }
 }
