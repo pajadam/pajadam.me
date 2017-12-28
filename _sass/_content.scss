@@ -1,3 +1,5 @@
+$bottom-radius: 8px;
+
 .container{
     color: #eee;
     margin: auto;
@@ -9,45 +11,83 @@
 }
 
 .box{
-    width: 100%;
+    width: 49%;
+    float: left;
     margin: 24px auto;
-    padding: 24px;
     max-width: $max-width;
     box-sizing: border-box;
     text-align: center;
-    background-color: rgba(0, 0, 0, .45);
+    background-color: rgba(0, 0, 0, .3);
 
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.35);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.35);
-    box-shadow: 0px 0px 2px 0px rgba(0,0,0,.35);
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.25);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.25);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,.25);
+}
+
+article:nth-child(odd) .box{
+    margin-right: 1%;
+    border-bottom-right-radius: $bottom-radius;
+}
+
+article:nth-child(even) .box{
+    margin-left: 1%;
+    border-bottom-left-radius: $bottom-radius;
 }
 
 .box h1{
-    font-size: .75em;
+    padding: 6px 0px;
+    font-size: .6em;
+    text-align: left;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, .2)
+}
+
+.box h1 i{
+    float: left;
+    padding: 0px 6px;
 }
 
 .box p{
     margin: 8px 0px;
+    padding: 16px;
     font-size: .35em;
 }
 
 @media screen and (max-width: $mobile-width) {
-    .container{
-        padding: 0px 10px;
-        padding-top: 30px;
-        padding-bottom: 70px;
-    }
-
     .box{
-        margin: 14px auto;
+        width: 95%;
+        margin: 14px 0;
     }
 
     .box h1{
-        font-size: .6em;
+        font-size: .5em;
     }
 
     .box p{
         font-size: .35em;
+    }
+
+    article:nth-child(odd) .box{
+        margin-left: 5%;
+
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: $bottom-radius;
+    }
+
+    article:nth-child(even) .box{
+        margin-right: 5%;
+        margin-left: 0;
+
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: $bottom-radius;
+
+        h1{
+            text-align: right;
+        }
+
+        h1 i{
+            float: right;
+        }
     }
 }
 
@@ -59,11 +99,19 @@
     }
 
     .box h1{
-        font-size: .9em;
+        font-size: .65em;
     }
 
     .box p{
         margin: 12px 0px;
         font-size: .4em;
+    }
+
+    article:nth-child(odd) .box{
+        border-bottom-left-radius: $bottom-radius;
+    }
+
+    article:nth-child(even) .box{
+        border-bottom-right-radius: $bottom-radius;
     }
 }
