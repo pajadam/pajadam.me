@@ -1,10 +1,8 @@
 language: ruby
 rvm:
-- 2.3.1
+- 2.4.1
 
 install:
-  - gem uninstall bundler -x
-  - gem install bundler -v "=1.10.6"
   - bundle install
 
 script:
