@@ -16,7 +16,6 @@ $bottom-radius: 8px;
     margin: 24px auto;
     max-width: $max-width;
     box-sizing: border-box;
-    text-align: center;
     background-color: rgba(0, 0, 0, .3);
 
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.25);
@@ -48,10 +47,60 @@ article:nth-child(even) .box{
 }
 
 .box p{
-    margin: 8px 0px;
-    padding: 16px;
+    margin: 4px 0px;
+    padding: 8px 16px;
     font-size: .35em;
+    text-align: justify;
 }
+
+.box p a{
+    text-decoration: underline;
+}
+
+.box table td, th {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.box table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: .35em;
+    text-align: left;
+}
+
+.box table a{
+    padding: 8px;
+    display: block;
+}
+
+.box table tr:last-child a{
+    border-bottom-left-radius: 8px;
+}
+
+.box table a:hover{
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.box th, td{
+    padding: 8px;
+}
+
+.box td:first-child{
+    padding: 0;
+}
+
+.box table tr:last-child td{
+    border-bottom: none!important;
+}
+
+.box table tr:nth-child(odd){
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.box thead tr{
+    background-color: initial!important;
+}
+
 
 @media screen and (max-width: $mobile-width) {
     .box{
@@ -63,8 +112,8 @@ article:nth-child(even) .box{
         font-size: .5em;
     }
 
-    .box p{
-        font-size: .35em;
+    .box table tr:last-child a{
+        border-bottom-left-radius: initial;
     }
 
     article:nth-child(odd) .box{
