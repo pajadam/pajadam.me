@@ -1,73 +1,77 @@
-html{
-    color: #eee;
-    font-size: 48px;
-    font-family: 'Lato', sans-serif;
-    text-shadow: 0px 0px 3px rgba(0,0,0,.6);
+html {
+  color: #eee;
+  font-size: 48px;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, .6);
 }
 
 body,
-h1, h2, h3{
-    margin: 0px;
-    padding: 0px;
+h1,
+h2,
+h3 {
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-
-    position: relative;
-    min-height: 100vh;
-
-    background: #2b5876;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  background: #2b5876;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.top{
-    flex: none;
+.top {
+  flex: none;
 }
 
-main{
-    flex: 1;
-    height: 100%;
-
-    display: flex;
-    align-items: center;
+main {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.centered{
-    width: 100%;
-    text-align: center;
+.centered {
+  width: 100%;
+  text-align: center;
 }
 
-.justify{
-    text-align: justify;
+.justify {
+  text-align: justify;
 }
 
 .marginless,
-.marginless::before{
-    margin: 0;
+.marginless::before {
+  margin: 0;
 }
 
-a, a:link, a:visited{
-    color: #ccc;
-    text-decoration: none;
-    transition-duration: .3s;
+a,
+a:link,
+a:visited {
+  color: #ccc;
+  text-decoration: none;
+  transition-duration: .3s;
 }
 
 a:hover,
-a:active{
-    color: #fff;
+a:active {
+  color: #fff;
 }
 
 @media screen and (max-width: $mobile-width) {
-    .spacer{
-        margin-top: 16px;
-    }
+  .spacer {
+    margin-top: 16px;
+  }
 }
 
 @media screen and (min-width: $huge-width) {
-    .spacer{
-        margin-top: 32px;
-    }
+  .spacer {
+    margin-top: 32px;
+  }
 }

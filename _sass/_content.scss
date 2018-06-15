@@ -1,166 +1,152 @@
 $bottom-radius: 8px;
 
-.container{
-    color: #eee;
-    margin: auto;
-
-    width: 100%;
-
-    padding-top: 30px;
-    padding-bottom: 70px;
+.container {
+  color: #eee;
+  margin: auto;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 
-.box{
-    width: 49%;
-    float: left;
-    margin: 24px auto;
-    max-width: $max-width;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, .3);
-
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.25);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.25);
-    box-shadow: 0px 0px 2px 0px rgba(0,0,0,.25);
+.box {
+  width: 49%;
+  float: left;
+  margin: 24px auto;
+  max-width: $max-width;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .25);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .25);
 }
 
-article:nth-child(odd) .box{
-    margin-right: 1%;
-    border-bottom-right-radius: $bottom-radius;
+article:nth-child(odd) .box {
+  margin-right: 1%;
+  border-bottom-right-radius: $bottom-radius;
 }
 
-article:nth-child(even) .box{
-    margin-left: 1%;
-    border-bottom-left-radius: $bottom-radius;
+article:nth-child(even) .box {
+  margin-left: 1%;
+  border-bottom-left-radius: $bottom-radius;
 }
 
-.box h1{
-    padding: 6px 0px;
-    font-size: .6em;
-    text-align: left;
-    letter-spacing: 2px;
-    background-color: rgba(0, 0, 0, .2)
+.box h1 {
+  padding: 6px 0px;
+  font-size: .6em;
+  text-align: left;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, .2)
 }
 
-.box h1 i{
-    float: left;
-    padding: 0px 6px;
+.box h1 i {
+  float: left;
+  padding: 0px 6px;
 }
 
-.box p{
-    margin: 4px 0px;
-    padding: 8px 16px;
-    font-size: .35em;
-    text-align: justify;
+.box p {
+  margin: 4px 0px;
+  padding: 8px 16px;
+  font-size: .35em;
+  text-align: justify;
 }
 
-.box p a{
-    text-decoration: underline;
+.box p a {
+  text-decoration: underline;
 }
 
-.box table td, th {
-    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+.box table td,
+th {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 
-.box table{
-    border-collapse: collapse;
-    width: 100%;
-    font-size: .35em;
-    text-align: left;
+.box table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: .35em;
+  text-align: left;
 }
 
-.box table a{
-    padding: 8px;
-    display: block;
+.box table a {
+  padding: 8px;
+  display: block;
 }
 
-.box table tr:last-child a{
-    border-bottom-left-radius: 8px;
+.box table tr:last-child a {
+  border-bottom-left-radius: 8px;
 }
 
-.box table a:hover{
-    background-color: rgba(0, 0, 0, .2);
+.box table a:hover {
+  background-color: rgba(0, 0, 0, .2);
 }
 
-.box th, td{
-    padding: 8px;
+.box th,
+td {
+  padding: 8px;
 }
 
-.box td:first-child{
-    padding: 0;
+.box td:first-child {
+  padding: 0;
 }
 
-.box table tr:last-child td{
-    border-bottom: none!important;
+.box table tr:last-child td {
+  border-bottom: none !important;
 }
 
-.box table tr:nth-child(odd){
-    background-color: rgba(0, 0, 0, .1);
+.box table tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, .1);
 }
 
-.box thead tr{
-    background-color: initial!important;
+.box thead tr {
+  background-color: initial !important;
 }
-
 
 @media screen and (max-width: $mobile-width) {
-    .box{
-        width: 95%;
-        margin: 14px 0;
+  .box {
+    width: 95%;
+    margin: 14px 0;
+  }
+  .box h1 {
+    font-size: .5em;
+  }
+  .box table tr:last-child a {
+    border-bottom-left-radius: initial;
+  }
+  article:nth-child(odd) .box {
+    margin-left: 5%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: $bottom-radius;
+  }
+  article:nth-child(even) .box {
+    margin-right: 5%;
+    margin-left: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: $bottom-radius;
+    h1 {
+      text-align: right;
     }
-
-    .box h1{
-        font-size: .5em;
+    h1 i {
+      float: right;
     }
-
-    .box table tr:last-child a{
-        border-bottom-left-radius: initial;
-    }
-
-    article:nth-child(odd) .box{
-        margin-left: 5%;
-
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: $bottom-radius;
-    }
-
-    article:nth-child(even) .box{
-        margin-right: 5%;
-        margin-left: 0;
-
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: $bottom-radius;
-
-        h1{
-            text-align: right;
-        }
-
-        h1 i{
-            float: right;
-        }
-    }
+  }
 }
 
 @media screen and (min-width: $huge-width) {
-    .container{
-        padding: 0px 10%;
-        padding-top: 30px;
-        padding-bottom: 70px;
-    }
-
-    .box h1{
-        font-size: .65em;
-    }
-
-    .box p{
-        margin: 12px 0px;
-        font-size: .4em;
-    }
-
-    article:nth-child(odd) .box{
-        border-bottom-left-radius: $bottom-radius;
-    }
-
-    article:nth-child(even) .box{
-        border-bottom-right-radius: $bottom-radius;
-    }
+  .container {
+    padding: 0px 10%;
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+  .box h1 {
+    font-size: .65em;
+  }
+  .box p {
+    margin: 12px 0px;
+    font-size: .4em;
+  }
+  article:nth-child(odd) .box {
+    border-bottom-left-radius: $bottom-radius;
+  }
+  article:nth-child(even) .box {
+    border-bottom-right-radius: $bottom-radius;
+  }
 }

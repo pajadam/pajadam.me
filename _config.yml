@@ -1,5 +1,8 @@
-title: Adam Pajkert < software developer > pajadam
-description: My name is Adam Pajkert also known as pajadam. I'm young software developer from Poland. Feel free to check out my projects and social media.
+title: Adam Pajkert - Developer website.
+description: My name is Adam Pajkert over the internet known as pajadam.
+             Here You can find some basic informations about me and projects
+             that I've done in the past. Feel free to check out my blog and
+             social media.
 altname: Adam Pajkert | pajadam
 author: Adam Pajkert
 url: "https://pajadam.me"
@@ -15,4 +18,4 @@ jekyll-press:
   css_options: {}
   html_options: {}
 
-exclude: [ "LICENSE", "README.md", ".gitignore", ".gitattributes", "Gemfile", ".bundle" ]
+exclude: [ "LICENSE", "README.md", ".gitignore", ".gitattributes", "Gemfile", ".bundle", ".editorconfig" ]

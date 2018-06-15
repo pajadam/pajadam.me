@@ -1,15 +1,14 @@
-$border_0: 4px solid #ffffff40;
-$border_1: 4px solid #ffffff15;
-$border_2: 4px solid #ffffff20;
-$border_3: 4px solid #ffffff15;
-$border_4: 4px solid #ffffff50;
-$border_5: 4px solid #ffffff30;
+$border_0: 4px solid rgba(255, 255, 255, .64);
+$border_1: 4px solid rgba(255, 255, 255, .21);
+$border_2: 4px solid rgba(255, 255, 255, .32);
+$border_3: 4px solid rgba(255, 255, 255, .21);
+$border_4: 4px solid rgba(255, 255, 255, .80);
+$border_5: 4px solid rgba(255, 255, 255, .48);
 
-$full_color: #ffffff25;
+$full_color: rgba(255, 255, 255, .37);
 
 $start_y: 100px;
 $end_y: -700px;
-
 $end_rotation: 600deg;
 
 .animateme {

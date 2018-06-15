@@ -9,7 +9,12 @@
 
 {% include parts/base_metadata.html %}
 
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/data/css/main.css">
+{% comment %}
+	Resource preloading for fonts used in font-face css.
+	https://www.keycdn.com/support/preload-directive/
+{% endcomment %}
 
-<script async type="text/javascript" src="/data/js/analytics.js"></script>
+<link rel="preload" href="/data/font/lato-v14-latin-regular.woff2" as="font" crossorigin>
+<link rel="preload" href="/data/font/fontello.woff2?93545015" as="font" crossorigin>
+
+<link rel="stylesheet" type="text/css" href="/data/css/main.css">
